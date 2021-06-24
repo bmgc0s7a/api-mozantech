@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (.*)/$ index.php?td=$1 [QSA,NC,L]
+RewriteRule ^([^/]+)\/([^/]+)\/?$ index.php?td=$1&pesq=$2 [NC]
+</IfModule>

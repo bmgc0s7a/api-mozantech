@@ -1,0 +1,8 @@
+{
+	"name":"api/bmgc0st4",
+	"autoload" :{
+		"psr-4": {
+			"resources\\":"app/"
+		}
+	}
+}
