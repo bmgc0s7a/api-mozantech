@@ -16,7 +16,7 @@ The API contain 4 option to you call  GET, POST, PUT and DELETE and you should u
 
 //GET 
 
-$url = "http://localhost/API_mozantech/encomendas/"; or $url = "http://localhost/API_mozantech/produtos/"; or or $url = "http://localhost/API_mozantech/produtos/1"; //Link where you install de API
+$url = "http://localhost/API_mozantech/encomendas/"; or $url = "http://localhost/API_mozantech/produtos/"; or $url = "http://localhost/API_mozantech/produtos/1"; //Link where you install de API
 $curl = curl_init($url);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($curl);
@@ -25,7 +25,7 @@ echo $response . PHP_EOL; //Show the results
 
 Note:
 
-The URL "http://localhost/API_mozantech/produtos/1" show only product ID 1;
+The URL "http://localhost/API_mozantech/produtos/1" or "http://localhost/API_mozantech/encomendas/1" show only product / orders ID 1;
 
 // POST
 
@@ -44,6 +44,10 @@ curl_close($curl);
 
 echo $response . PHP_EOL; //Show the results
 
+Note:
+
+The ID the orders or product is mandatory to be sequential, because the search in file text was developed thus.
+
 // PUT
 
 $url = "http://localhost/API_mozantech/produtos/"; or $url = "http://localhost/API_mozantech/encomendas/";
@@ -56,6 +60,10 @@ $response = curl_exec($curl);
 curl_close($curl);
 echo $response . PHP_EOL;
 
+Note:
+
+The method PUT only show the message product or order was updated, because in file txt not easy update one line.
+
 // DELETE
 
 $url = "http://localhost/API_mozantech/produtos/"; or $url = "http://localhost/API_mozantech/encomendas/";
@@ -67,4 +75,8 @@ curl_setopt($curl, CURLOPT_POSTFIELDS,  json_encode($data));
 $response = curl_exec($curl);
 curl_close($curl);
 echo $response . PHP_EOL;
+
+Note:
+
+The method DELETE only show the message product or order was updated, because in file txt not easy update one line.
 
