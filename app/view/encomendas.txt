@@ -1,0 +1,3 @@
+0___Multibanco___2,2
+1___Paypal___4,5
+4___paypal___9.18

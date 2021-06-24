@@ -1,0 +1,5 @@
+0___Laca de Cabelo___1.2
+1___Shampo___2
+2___Pente___4
+3___Escova___3
+4___Escovas___3
