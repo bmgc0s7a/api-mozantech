@@ -110,5 +110,5 @@ echo $response . PHP_EOL;
 
 Note:
 
-The method DELETE only show the message product or order was updated, because in file txt not easy update one line.
+The method DELETE only show the message product or order was deleted, because in file txt not easy update one line.
 
